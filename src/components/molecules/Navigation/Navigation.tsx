@@ -1,19 +1,6 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 const Navigation = () => {
-  // const navProtoObj = Object.create(Object.prototype, {
-  //   section1: {
-  //       label: 'section 1',
-  //       options: {
-  //           main: {
-  //               label: 'main'
-  //           },
-  //           contact: {
-  //               label: 'contact'
-  //           }
-  //       }
-  //   }
-  // })
 
   const navObj = {
     section1: {
