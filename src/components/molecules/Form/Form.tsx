@@ -14,7 +14,7 @@ const UserRegistrationForm: React.FC = () => {
 
   const validateEmail = (email: string): boolean => {
     // Simple email validation using regex
-    const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,3}$/;
+    const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
     return emailRegex.test(email);
   };
 
@@ -76,7 +76,7 @@ const UserRegistrationForm: React.FC = () => {
       <div>
         <label htmlFor="email">Email:</label>
         <input
-          type="email"
+          type="text"
           id="email"
           name="email"
           value={formData.email}
